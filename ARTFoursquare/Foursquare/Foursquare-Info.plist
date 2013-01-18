@@ -27,7 +27,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>konamicore</string>
+				<string>someScheme</string>
 			</array>
 		</dict>
 	</array>

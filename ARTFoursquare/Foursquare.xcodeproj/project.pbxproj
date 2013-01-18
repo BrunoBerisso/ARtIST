@@ -23,6 +23,8 @@
 		9B947BF016A9DF1C008D6BD7 /* ARTFoursquareCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B947BEA16A9DF1C008D6BD7 /* ARTFoursquareCategory.m */; };
 		9B947BF116A9DF1C008D6BD7 /* ARTFoursquareLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B947BEC16A9DF1C008D6BD7 /* ARTFoursquareLocation.m */; };
 		9B947BF216A9DF1C008D6BD7 /* ARTFoursquareVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B947BEE16A9DF1C008D6BD7 /* ARTFoursquareVenue.m */; };
+		9B947BF816A9DFCB008D6BD7 /* BZFoursquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B947BF516A9DFCB008D6BD7 /* BZFoursquare.m */; };
+		9B947BF916A9DFCB008D6BD7 /* BZFoursquareRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B947BF716A9DFCB008D6BD7 /* BZFoursquareRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,10 @@
 		9B947BEC16A9DF1C008D6BD7 /* ARTFoursquareLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTFoursquareLocation.m; sourceTree = "<group>"; };
 		9B947BED16A9DF1C008D6BD7 /* ARTFoursquareVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTFoursquareVenue.h; sourceTree = "<group>"; };
 		9B947BEE16A9DF1C008D6BD7 /* ARTFoursquareVenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTFoursquareVenue.m; sourceTree = "<group>"; };
+		9B947BF416A9DFCB008D6BD7 /* BZFoursquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZFoursquare.h; sourceTree = "<group>"; };
+		9B947BF516A9DFCB008D6BD7 /* BZFoursquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZFoursquare.m; sourceTree = "<group>"; };
+		9B947BF616A9DFCB008D6BD7 /* BZFoursquareRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZFoursquareRequest.h; sourceTree = "<group>"; };
+		9B947BF716A9DFCB008D6BD7 /* BZFoursquareRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZFoursquareRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +133,7 @@
 		9B947BE616A9DF1C008D6BD7 /* ARTFoursquare */ = {
 			isa = PBXGroup;
 			children = (
+				9B947BF316A9DFCB008D6BD7 /* BZFoursquare */,
 				9B947BE716A9DF1C008D6BD7 /* ARTFoursquare.h */,
 				9B947BE816A9DF1C008D6BD7 /* ARTFoursquare.m */,
 				9B947BE916A9DF1C008D6BD7 /* ARTFoursquareCategory.h */,
@@ -137,6 +144,17 @@
 				9B947BEE16A9DF1C008D6BD7 /* ARTFoursquareVenue.m */,
 			);
 			path = ARTFoursquare;
+			sourceTree = "<group>";
+		};
+		9B947BF316A9DFCB008D6BD7 /* BZFoursquare */ = {
+			isa = PBXGroup;
+			children = (
+				9B947BF416A9DFCB008D6BD7 /* BZFoursquare.h */,
+				9B947BF516A9DFCB008D6BD7 /* BZFoursquare.m */,
+				9B947BF616A9DFCB008D6BD7 /* BZFoursquareRequest.h */,
+				9B947BF716A9DFCB008D6BD7 /* BZFoursquareRequest.m */,
+			);
+			path = BZFoursquare;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +231,8 @@
 				9B947BF016A9DF1C008D6BD7 /* ARTFoursquareCategory.m in Sources */,
 				9B947BF116A9DF1C008D6BD7 /* ARTFoursquareLocation.m in Sources */,
 				9B947BF216A9DF1C008D6BD7 /* ARTFoursquareVenue.m in Sources */,
+				9B947BF816A9DFCB008D6BD7 /* BZFoursquare.m in Sources */,
+				9B947BF916A9DFCB008D6BD7 /* BZFoursquareRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +312,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Foursquare/Foursquare-Prefix.pch";
 				INFOPLIST_FILE = "Foursquare/Foursquare-Info.plist";
+				OTHER_CFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
