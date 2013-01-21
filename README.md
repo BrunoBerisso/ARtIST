@@ -14,7 +14,7 @@ For accomplish this mission **all** the code in this repo **must** follow this s
 				-> [XCode Project]
 					|
 					-> [tool name: this directory must have all the code needed for the tool to work]
-					README.md
+				README.md
 This way if I want to integrate this tool all I need is inside the folder "[tool name]" inside de XCode project.
 
 2. The "README.md" file iside a tool folder must have this format:
