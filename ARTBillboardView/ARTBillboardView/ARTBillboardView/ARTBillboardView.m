@@ -71,7 +71,12 @@
     CGRect frame = label.frame;
     frame.origin.x = 0;
     frame.origin.y = newYPos;
-    frame.size.width = self.frame.size.width;
+    
+    CGSize infinitWidthSize = CGSizeMake(INFINITY, 0);
+    CGFloat textWidth = [label.text sizeWithFont:label.font constrainedToSize:infinitWidthSize lineBreakMode:NSLineBreakByTruncatingTail].width;
+    if (textWidth > self.frame.size.width)
+        frame.size.width = textWidth;
+    
     label.frame = frame;
     
     [self addSubview:label];
